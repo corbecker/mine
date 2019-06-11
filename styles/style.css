@@ -5,7 +5,8 @@
 
   /* colors */
   --dark-blue: #071e26;
-  --aqua: #00f0ff;;
+  --aqua: #00f0ff;
+  --yellow: #fcee0a;
 }
 
 * , *:before, *:after{ 
@@ -18,6 +19,7 @@
 body{
   background: var(--dark-blue);
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
 }
 
 /* header */
@@ -60,10 +62,13 @@ body{
   text-decoration: none;
 }
 
+/* highlight */
+
 .highlight__solid{
   position: relative;
-  padding: 0 calc(var(--space)/4) 0 calc(var(--space)/4);
+  padding: calc(var(--space)/4);
   display: inline-block;
+  line-height: 1;
 }
 
 .highlight__solid__inner{
@@ -78,7 +83,8 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fcee0a;
+  background: var(--yellow);
+  border-right: 2px solid var(--aqua);
   clip-path: polygon(
       0 0,
       0 0,
@@ -91,6 +97,40 @@ body{
     );
 }
 
+/* notched underline */
+
+.underline{
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+.underline::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  clip-path: polygon(
+      0 0,
+      0 0,
+      100% 0, 
+      100% 0,
+      100% 20%,
+      100% 20%,
+      100px 20%, 
+      100px 20%,
+      90px 100%, 
+      90px 100%,
+      0 100%,
+      0 100%
+    );
+    border-bottom: 1px solid var(--aqua);
+}
+
 /* portrait phone */
 @media only screen and (max-width: 320px) {
   .container {
@@ -101,6 +141,17 @@ body{
     margin-top: var(--space);
     font-size: 2rem;
   }
+
+  .header__blurb {
+    font-size: 1rem;
+  }
+}
+
+/* phone landscape */
+@media only screen and (min-width: 321px) and (max-width: 580px){
+  .header__blurb {
+    font-size: 1rem;
+  }
 }
 
 /* tablet portrait */
@@ -108,6 +159,10 @@ body{
 
   .header__heading{
     font-size: 2.5rem;
+  }
+
+  .header__blurb {
+    font-size: 1rem;
   }
 }
 
