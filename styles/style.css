@@ -1,6 +1,7 @@
 :root {
   --space: 1.8rem;
   --spaceXL: calc(var(--space)*2);
+  --notchSize: 15px;
 
   /* colors */
   --dark-blue: #071e26;
@@ -57,6 +58,37 @@ body{
 
 .nolink{
   text-decoration: none;
+}
+
+.highlight__solid{
+  position: relative;
+  padding: 0 calc(var(--space)/4) 0 calc(var(--space)/4);
+  display: inline-block;
+}
+
+.highlight__solid__inner{
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.highlight__solid::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fcee0a;
+  clip-path: polygon(
+      0 0,
+      0 0,
+      100% 0, 
+      100% 0,
+      100% 100%,
+      100% 100%,
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
 }
 
 /* portrait phone */
