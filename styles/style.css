@@ -1,0 +1,104 @@
+:root {
+  --space: 1.8rem;
+  --spaceXL: calc(var(--space)*2);
+
+  /* colors */
+  --dark-blue: #071e26;
+  --aqua: #00f0ff;;
+}
+
+* , *:before, *:after{ 
+  box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -ms-box-sizing:border-box;
+}
+
+body{
+  background: var(--dark-blue);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* header */
+
+
+.header__logo{
+  font-size: 1.2rem;
+  color: var(--aqua);
+}
+
+.header__logo__caret{
+  animation: 1s blink step-end infinite;
+}
+
+.header__heading{
+  margin-top: var(--spaceXL);
+  font-family: 'Cousine', monospace;
+  font-size: 3rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.header__blurb {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  line-height: 1.35;
+}
+
+/* general */
+
+.container {
+  padding: var(--spaceXL);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nolink{
+  text-decoration: none;
+}
+
+/* portrait phone */
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: var(--space);
+  }
+
+  .header__heading{
+    margin-top: var(--space);
+    font-size: 2rem;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+
+  .header__heading{
+    font-size: 2.5rem;
+  }
+}
+
+/* large phone and landscape */
+@media only screen and (min-width: 321px) and (max-width: 580px){
+  .container {
+    padding: var(--space);
+  }
+
+  .header__heading{
+    margin-top: var(--space);
+    font-size: 2rem;
+  }
+}
+
+
+/* Keyframes */
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+  color: var(--aqua);
+  }
+}
