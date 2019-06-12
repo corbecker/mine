@@ -20,13 +20,22 @@ body{
   background: var(--dark-blue);
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
+  color: white;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h3{
+  font-weight: 400;
+  color: var(--aqua);
 }
 
 /* header */
 
-
 .header__logo{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--aqua);
 }
 
@@ -60,6 +69,37 @@ body{
 
 .nolink{
   text-decoration: none;
+}
+
+/* skills section */
+
+.skills{
+  margin-top: var(--spaceXL);
+}
+
+.skills__list{
+  list-style: none;
+}
+
+.skills__list__item{
+  margin-top: 5px;
+}
+
+.skills__list__item:before{
+    content: '~';
+    margin-left: -20px;
+    margin-right: 10px;
+    color: var(--aqua);
+}
+
+/* flex */
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1 1 200px;
 }
 
 /* highlight */
@@ -145,12 +185,23 @@ body{
   .header__blurb {
     font-size: 1rem;
   }
+
+  .flex-grid {
+    /* display: block; */
+    flex-wrap: wrap;
+
+  }
 }
 
 /* phone landscape */
 @media only screen and (min-width: 321px) and (max-width: 580px){
   .header__blurb {
     font-size: 1rem;
+  }
+
+  .flex-grid {
+    /* display: block; */
+    flex-wrap: wrap;
   }
 }
 
