@@ -62,6 +62,7 @@ img{
   color: rgba(255,255,255,0.7);
   max-width: 600px;
   line-height: 1.35;
+  margin-right: var(--space);
 }
 
 .header__cols{
@@ -81,7 +82,7 @@ img{
   width: 350px;
   margin-top: var(--spaceXL);
   position: relative;
-  margin-left: var(--space);
+  opacity: 0.9;
 }
 
 .profile__card__text{
@@ -111,7 +112,7 @@ img{
   margin-left: var(--space);
   text-transform: uppercase;
   color: rgba(0,240,255, 0.4);
-  text-shadow: 0px 0px 3px var(--aqua);
+  text-shadow: 0px 0px 2px var(--aqua);
 }
 
 .profile__bio__small{
@@ -314,7 +315,7 @@ img{
 }
 
 /* portrait phone */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   .container {
     padding: var(--space);
   }
@@ -354,71 +355,6 @@ img{
   .profile__card__text{
     font-size: 9px;
   }
-}
-
-/* phone landscape */
-@media only screen and (min-width: 321px) and (max-width: 580px){
-
-  .header__logo{
-    margin-top: var(--space);
-  }
-  
-  .header__blurb {
-    font-size: 1rem;
-  }
-
-  .flex-grid {
-    /* display: block; */
-    flex-wrap: wrap;
-  }
-
-  .HUD {
-    margin: 10px;
-  }
-
-  .profile__card {
-    width: 250px;
-  }
-  
-  .profile__card:after {
-    width: 250px;
-    height: 250px;
-    background-size: 250px auto;
-  }
-
-  .profile__card__text{
-    font-size: 9px;
-  }
-
-}
-
-/* tablet portrait */
-@media only screen and (min-width: 581px) and (max-width: 768px) {
-
-  .header__heading{
-    font-size: 2.5rem;
-  }
-
-  .header__blurb {
-    font-size: 1rem;
-  }
-}
-
-/* large phone and landscape */
-@media only screen and (min-width: 321px) and (max-width: 580px){
-  .container {
-    padding: var(--space);
-  }
-
-  .header__heading{
-    margin-top: var(--space);
-    font-size: 2rem;
-  }
-}
-
-/* edge case media queries */
-
-@media only screen and (max-width: 670px){
 
   .profile{
     flex-direction: column;
@@ -427,7 +363,6 @@ img{
   }
   
   .profile__card {
-    flex: 1;
     margin-left: 0;
   }
 
@@ -449,6 +384,127 @@ img{
     margin-top: 0px;
   }
 }
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+
+  .container {
+    padding: var(--space);
+  }
+
+  .header__heading{
+    margin-top: var(--space);
+    font-size: 2rem;
+  }
+
+  .header__logo{
+    margin-top: var(--space);
+  }
+  
+  .header__blurb {
+    font-size: 1rem;
+  }
+
+  .flex-grid {
+    /* display: block; */
+    flex-wrap: wrap;
+  }
+
+  .HUD {
+    margin: 10px;
+  }
+
+  .profile__card {
+    width: 250px;
+  }
+  
+  .profile__card:after {
+    width: 250px;
+    height: 250px;
+    background-size: 250px auto;
+  }
+
+  .profile__card__text{
+    font-size: 9px;
+  }
+
+  .profile{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+
+  .header__heading{
+    font-size: 2.5rem;
+  }
+
+  .header__blurb {
+    font-size: 1rem;
+  }
+
+  .profile{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .profile__bio{
+    margin-top: var(--space);
+  }
+  
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  .profile{
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+  }
+
+
+  .profile__bio{
+    margin-top: var(--space);
+  }
+}
+
+
+/* edge case media queries */
+
+/* @media only screen and (max-width: 670px){
+
+  .profile{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .profile__card {
+    margin-left: 0;
+  }
+
+  .profile__bio{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-top: var(--space);
+  }
+
+  .profile__bio__item{
+    flex: 1 1 auto;
+    margin: 10px;
+  }
+  
+  .profile__bio__small{
+    margin-top: 0px;
+  }
+} */
 
 /* Keyframes */
 
