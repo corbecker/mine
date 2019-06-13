@@ -33,6 +33,10 @@ h3{
   color: var(--aqua);
 }
 
+img{
+  max-width: 100%;
+}
+
 /* header */
 
 .header__logo{
@@ -58,6 +62,37 @@ h3{
   color: rgba(255,255,255,0.7);
   max-width: 600px;
   line-height: 1.35;
+}
+
+.header__cols{
+  flex: 1 1 400px !important;
+
+}
+
+/* profile picture */
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.profile__card {
+  width: 350px;
+  margin-top: var(--spaceXL);
+  position: relative;
+}
+
+.profile__card:after {
+  position: absolute;
+  content: '';
+  top: 0;
+	left: 0;
+	width: 350px;
+  height: 350px;
+	background-image: url(../images/overlay.png);
+  background-size: 350px auto;
+  background-repeat: no-repeat;
 }
 
 /* general */
@@ -244,6 +279,16 @@ h3{
   .HUD {
     margin: 10px;
   }
+
+  .profile__card {
+    width: 250px;
+  }
+  
+  .profile__card:after {
+    width: 250px;
+    height: 250px;
+    background-size: 250px auto;
+  }
 }
 
 /* phone landscape */
@@ -264,6 +309,16 @@ h3{
 
   .HUD {
     margin: 10px;
+  }
+
+  .profile__card {
+    width: 250px;
+  }
+  
+  .profile__card:after {
+    width: 250px;
+    height: 250px;
+    background-size: 250px auto;
   }
 }
 
