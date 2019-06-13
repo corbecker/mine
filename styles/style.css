@@ -7,6 +7,7 @@
   --dark-blue: #071e26;
   --aqua: #00f0ff;
   --yellow: #fcee0a;
+  --aqua-light: rgba(0,240,255, 0.2);
 }
 
 * , *:before, *:after{ 
@@ -35,6 +36,7 @@ h3{
 /* header */
 
 .header__logo{
+  display: block;
   font-size: 1.4rem;
   color: var(--aqua);
 }
@@ -69,6 +71,50 @@ h3{
 
 .nolink{
   text-decoration: none;
+}
+
+.HUD {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 20px;
+}
+
+.HUD > .corner{
+  position: absolute; 
+  width: 10%;
+  height: 10%;
+  color: var(--aqua-light);
+  font-size: 12px;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.HUD > .corner:nth-child(1){
+  border-top: 1px solid var(--aqua-light);
+  border-left: 1px solid var(--aqua-light);
+}
+
+.HUD > .corner:nth-child(2){
+  right: 0;
+  border-top: 1px solid var(--aqua-light);
+  border-right: 1px solid var(--aqua-light);
+}
+
+.HUD > .corner:nth-child(3){
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid var(--aqua-light);
+  border-right: 1px solid var(--aqua-light);
+}
+
+.HUD > .corner:nth-child(4){
+  bottom: 0;
+  border-bottom: 1px solid var(--aqua-light);
+  border-left: 1px solid var(--aqua-light);
 }
 
 /* skills section */
@@ -177,6 +223,10 @@ h3{
     padding: var(--space);
   }
 
+  .header__logo{
+    margin-top: var(--space);
+  }
+
   .header__heading{
     margin-top: var(--space);
     font-size: 2rem;
@@ -189,12 +239,20 @@ h3{
   .flex-grid {
     /* display: block; */
     flex-wrap: wrap;
+  }
 
+  .HUD {
+    margin: 10px;
   }
 }
 
 /* phone landscape */
 @media only screen and (min-width: 321px) and (max-width: 580px){
+
+  .header__logo{
+    margin-top: var(--space);
+  }
+  
   .header__blurb {
     font-size: 1rem;
   }
@@ -202,6 +260,10 @@ h3{
   .flex-grid {
     /* display: block; */
     flex-wrap: wrap;
+  }
+
+  .HUD {
+    margin: 10px;
   }
 }
 
@@ -228,7 +290,6 @@ h3{
     font-size: 2rem;
   }
 }
-
 
 /* Keyframes */
 
