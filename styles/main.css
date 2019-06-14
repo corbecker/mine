@@ -1,0 +1,103 @@
+:root {
+  --space: 1.8rem;
+  --spaceXL: calc(var(--space)*2);
+  --notchSize: 15px;
+
+  /* colors */
+  --dark-blue: #071e26;
+  --aqua: #00f0ff;
+  --yellow: #fcee0a;
+  --aqua-light: rgba(0,240,255, 0.3);
+}
+
+* , *:before, *:after{ 
+  box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -ms-box-sizing:border-box;
+}
+
+body{
+  background: var(--dark-blue);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  color: white;
+}
+
+h1, h2 {
+  color: white;
+  margin: 0;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--aqua);
+}
+
+img{
+  max-width: 100%;
+}
+
+.l-container {
+  padding: var(--spaceXL);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.h-nolink{
+  text-decoration: none;
+}
+
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.l-grid__grid-item {
+  flex: 1fr 1fr 160px;
+}
+
+.mt{
+  margin-top: var(--space);
+}
+
+.ml{
+  margin-left: var(--space);
+}
+
+.mr{
+  margin-right: var(--space);
+}
+
+/* portrait phone */
+@media only screen and (max-width: 480px) {
+
+  .l-container {
+    padding: var(--space);
+  }
+
+}
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+
+  .l-container {
+    padding: var(--space);
+  }
+
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+
+  
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+
+
+}

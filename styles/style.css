@@ -1,188 +1,11 @@
-:root {
-  --space: 1.8rem;
-  --spaceXL: calc(var(--space)*2);
-  --notchSize: 15px;
+@import './normalize.css';
+@import './main.css';
+@import './hud.css';
+@import './header.css';
+@import './logo.css';
+@import './bio.css';
+@import './styled-image.css';
 
-  /* colors */
-  --dark-blue: #071e26;
-  --aqua: #00f0ff;
-  --yellow: #fcee0a;
-  --aqua-light: rgba(0,240,255, 0.3);
-}
-
-* , *:before, *:after{ 
-  box-sizing:border-box; 
-  -moz-box-sizing:border-box; 
-  -webkit-box-sizing:border-box; 
-  -ms-box-sizing:border-box;
-}
-
-body{
-  background: var(--dark-blue);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2rem;
-  color: white;
-}
-
-h1, h2 {
-  color: white;
-}
-
-h3{
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: var(--aqua);
-}
-
-img{
-  max-width: 100%;
-}
-
-/* header */
-
-.header__logo{
-  display: block;
-  font-size: 1.4rem;
-  color: var(--aqua);
-}
-
-.header__logo__caret{
-  animation: 1s blink step-end infinite;
-}
-
-.header__heading{
-  margin-top: var(--spaceXL);
-  font-family: 'Cousine', monospace;
-  font-size: 3rem;
-  color: white;
-  line-height: 1.5;
-}
-
-.header__blurb {
-  font-size: 1.2rem;
-  color: rgba(255,255,255,0.7);
-  max-width: 600px;
-  line-height: 1.35;
-  margin-right: var(--space);
-}
-
-.header__cols{
-  flex: 1 1 400px!important;
-
-}
-
-/* profile picture */
-
-.profile{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.profile__card {
-  width: 350px;
-  margin-top: var(--spaceXL);
-  position: relative;
-  opacity: 0.9;
-}
-
-.profile__card__text{
-  position: absolute;
-  top: -4px;
-  z-index: 1;
-  color: var(--aqua-light);
-  font-size: 12px;
-}
-
-.profile__card:after {
-  position: absolute;
-  content: '';
-  top: 0;
-	left: 0;
-	width: 350px;
-  height: 350px;
-	background-image: url(../images/overlay.png);
-  background-size: 350px auto;
-  background-repeat: no-repeat;
-}
-
-.profile__bio{
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  margin-left: var(--space);
-  text-transform: uppercase;
-  color: rgba(0,240,255, 0.4);
-  text-shadow: 0px 0px 2px var(--aqua);
-}
-
-.profile__bio__small{
-  font-size: 12px;
-  margin-top: 25px;
-}
-
-.profile__bio__large{
-  font-size: 1.1rem;
-  border-bottom: 1px solid var(--aqua-light);
-}
-
-
-/* general */
-
-.container {
-  padding: var(--spaceXL);
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.nolink{
-  text-decoration: none;
-}
-
-.HUD {
-  position: fixed;
-  pointer-events: none;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 20px;
-}
-
-.HUD > .corner{
-  position: absolute; 
-  width: 10%;
-  height: 10%;
-  color: var(--aqua-light);
-  font-size: 12px;
-  padding: 5px;
-  white-space: nowrap;
-}
-
-.HUD > .corner:nth-child(1){
-  border-top: 1px solid var(--aqua-light);
-  border-left: 1px solid var(--aqua-light);
-}
-
-.HUD > .corner:nth-child(2){
-  right: 0;
-  border-top: 1px solid var(--aqua-light);
-  border-right: 1px solid var(--aqua-light);
-}
-
-.HUD > .corner:nth-child(3){
-  right: 0;
-  bottom: 0;
-  border-bottom: 1px solid var(--aqua-light);
-  border-right: 1px solid var(--aqua-light);
-}
-
-.HUD > .corner:nth-child(4){
-  bottom: 0;
-  border-bottom: 1px solid var(--aqua-light);
-  border-left: 1px solid var(--aqua-light);
-}
 
 /* skills section */
 
@@ -205,16 +28,6 @@ img{
     color: var(--aqua);
 }
 
-/* flex */
-
-.flex-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.col {
-  flex: 1fr 1fr 160px;
-}
 
 /* highlight */
 
@@ -288,13 +101,12 @@ img{
 .underline--small{
   position: relative;
   width: 100%;
-  height: 4px;
+  height: 5px;
 }
 
 .underline--small::after{
   content: '';
   position: absolute;
-  width: 40%;
   top: 0;
   left: 0;
   right: 0;
@@ -318,160 +130,25 @@ img{
 
 /* portrait phone */
 @media only screen and (max-width: 480px) {
-  .container {
-    padding: var(--space);
-  }
 
-  .header__logo{
-    margin-top: var(--space);
-  }
-
-  .header__heading{
-    margin-top: var(--space);
-    font-size: 2rem;
-  }
-
-  .header__blurb {
-    font-size: 1rem;
-  }
-
-  .flex-grid {
-    /* display: block; */
-    flex-wrap: wrap;
-  }
-
-  .HUD {
-    margin: 10px;
-  }
-
-  .profile__card {
-    width: 250px;
-  }
-  
-  .profile__card:after {
-    width: 250px;
-    height: 250px;
-    background-size: 250px auto;
-  }
-
-  .profile__card__text{
-    font-size: 9px;
-  }
-
-  .profile{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile__card {
-    margin-left: 0;
-  }
-
-  .profile__bio{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: space-around;
-    margin-left: 0;
-    margin-top: var(--space);
-  }
-
-  .profile__bio__item{
-    flex: 1 1 auto;
-    margin: 10px;
-  }
-  
-  .profile__bio__small{
-    margin-top: 0px;
-  }
 }
 
 /* phone landscape */
 @media only screen and (min-width: 481px) and (max-width: 620px){
 
-  .container {
-    padding: var(--space);
-  }
-
-  .header__heading{
-    margin-top: var(--space);
-    font-size: 2rem;
-  }
-
-  .header__logo{
-    margin-top: var(--space);
-  }
-  
-  .header__blurb {
-    font-size: 1rem;
-  }
-
-  .flex-grid {
-    /* display: block; */
-    flex-wrap: wrap;
-  }
-
-  .HUD {
-    margin: 10px;
-  }
-
-  .profile__card {
-    width: 250px;
-  }
-  
-  .profile__card:after {
-    width: 250px;
-    height: 250px;
-    background-size: 250px auto;
-  }
-
-  .profile__card__text{
-    font-size: 9px;
-  }
-
-  .profile{
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 
 }
 
 /* tablet portrait */
 @media only screen and (min-width: 621px) and (max-width: 768px) {
 
-  .header__heading{
-    font-size: 2.5rem;
-  }
-
-  .header__blurb {
-    font-size: 1rem;
-  }
-
-  .profile{
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .profile__bio{
-    margin-top: var(--space);
-  }
   
 }
 
 /* tablet landscape */
 
 @media only screen and (min-width: 769px) and (max-width: 1100px) {
-  .profile{
-    justify-content: flex-start;
-    /* align-items: flex-start; */
-  }
 
-
-  .profile__bio{
-    margin-top: var(--space);
-  }
 }
 
 

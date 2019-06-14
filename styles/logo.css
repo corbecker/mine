@@ -1,0 +1,32 @@
+.c-logo{
+  font-size: 1.4rem;
+  color: var(--aqua);
+  display: inline-block;
+}
+
+.c-logo__caret{
+  animation: 1s blink step-end infinite;
+}
+
+/* portrait phone */
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+
+  
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+
+}

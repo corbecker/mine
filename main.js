@@ -1,7 +1,6 @@
 
 function loadHUD() {
-  const _corner1 = document.querySelector('.corner:nth-child(1)');
-  console.log(_corner1)
+  const _corner1 = document.querySelector('.hud__corner:nth-child(1)');
   _corner1.textContent = getFormattedDate();
 }
 

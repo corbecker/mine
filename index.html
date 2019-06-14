@@ -5,75 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Corbin Becker - Web Developer</title>
 </head>
 <body>
-  <div class="HUD">
-    <div class="corner"></div>
-    <div class="corner"></div>
-    <div class="corner"></div>
-    <div class="corner"></div>
+  <div class="hud">
+    <div class="hud__corner"></div>
+    <div class="hud__corner"></div>
+    <div class="hud__corner"></div>
+    <div class="hud__corner"></div>
   </div>
-  <div class="container">
-    <header>
-      <div class="flex-grid">
-        <div class="col header__cols">
-            <a class="header__logo nolink" href="/">corbin becker:<span class="header__logo__caret">_</span></a>
-            <!-- TODO -->
-            <!-- blinking caret after logo -->
-            <h1 class="header__heading">Front-end <span class="highlight__solid"><span class="highlight__solid__inner">Developer</span></span><br>from Ireland.</h1>
-            <div class="header__blurb">
+  <div class="l-container">
+    <a class="c-logo h-nolink" href="/">corbin becker:<span class="c-logo__caret">_</span></a>
+    <header class="c-header">
+      <div class="l-grid">
+        <div class="l-grid__grid-item l-header__grid-item mr">
+            <h1 class="c-header__heading">Front-end <span class="highlight__solid"><span class="highlight__solid__inner">Developer</span></span><br>from Ireland.</h1>
+            <div class="c-header__blurb">
               <p>Yo I'm Corbin. I like making cool sh*t on the internet. I hang out mostly in the front-end using HTML, CSS & Javascript. I aspire to become the best full-stack developer I can be.</p> 
               <div class="underline"></div>
             </div>
         </div>
-        <div class="col profile header__cols">
-            <div class="profile__card">
-              <div class="profile__card__text">://profile.jpg_</div>
+        <div class="l-grid__grid-item l-header__grid-item">
+          <div class="c-header__profile">
+            <div class="c-styled-image mr">
+              <div class="c-styled-image__text">://profile.jpg_</div>
               <img src="images/profile.jpeg" alt="corbin becker profile picture">
             </div>
-            <div class="profile__bio">
-              <div class="profile__bio__item">
-                <div class="profile__bio__small">corbin</div>
-                <div class="profile__bio__large">becker</div>
-                <div class="underline--small"></div>
+            <div class="c-bio">
+              <div>
+                <div class="c-bio__text">corbin</div>
+                <div class="c-bio__text--large">
+                  becker
+                  <div class="underline--small"></div>
+                </div>
               </div>
               
-              <div class="profile__bio__item">
-                <div class="profile__bio__small">education</div>
-                <div class="profile__bio__large">BSc Computer Science</div>
-                <div class="underline--small"></div>
+              <div>
+                <div class="c-bio__text">education</div>
+                <div class="c-bio__text--large">
+                  BSc Computer Science
+                  <div class="underline--small"></div>
+                </div>
               </div>
               
-              <div class="profile__bio__item">
-                <div class="profile__bio__small">strengths</div>
-                <div class="profile__bio__large">JS html css </div>
-                <div class="underline--small"></div>
+              <div>
+                <div class="c-bio__text">strengths</div>
+                <div class="c-bio__text--large">
+                  JS html css
+                  <div class="underline--small"></div>
+                </div>
               </div>
-
-              <div class="profile__bio__item">
-                <div class="profile__bio__small">hobbies</div>
-                <div class="profile__bio__large">surfing photography</div>
-                <div class="underline--small"></div>
+  
+              <div>
+                <div class="c-bio__text">hobbies</div>
+                <div class="c-bio__text--large">
+                  surfing photography
+                  <div class="underline--small"></div>
+                </div>
               </div>
-
-              <div class="profile__bio__item">
-                <div class="profile__bio__small">interests</div>
-                <div class="profile__bio__large">blockchain react node</div>
-                <div class="underline--small"></div>
+  
+              <div>
+                <div class="c-bio__text">interests</div>
+                <div class="c-bio__text--large">
+                  blockchain react node
+                  <div class="underline--small"></div>
+                </div>
               </div>
-
             </div>
+          </div>
         </div>
       </div>
     </header>
     <section class="skills">
       <h2><span class="highlight__solid"><span class="highlight__solid__inner">Skills</span></span></h2>
 
-      <div class="flex-grid">
-        <div class="col">
+      <div class="l-grid">
+        <div class="l-grid__grid-item">
           <h3>:Languages_</h3>
           <ul class="skills__list">
             <li class="skills__list__item">Javascript</li>
@@ -91,7 +99,7 @@
             <li class="skills__list__item">Mocha</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="l-grid__grid-item">
           <h3>:Tools_</h3>
           <ul class="skills__list">
             <li class="skills__list__item">Grunt</li>
@@ -110,7 +118,7 @@
             <li class="skills__list__item">MongoDB</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="l-grid__grid-item">
           <h3>:Libraries_</h3>
           <ul class="skills__list">
             <li class="skills__list__item">Web3.js</li>
