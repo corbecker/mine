@@ -1,0 +1,14 @@
+.transparent-card{
+  border: 1px solid var(--aqua-light);
+  padding: 20px;
+  clip-path: polygon(
+      0 0,
+      0 0,
+      calc(100% - var(--bigNotch)) 0%, 
+      100% var(--bigNotch),
+      100% 100%,
+      100% 100%,
+      var(--bigNotch) 100%, 
+      0% calc(100% - var(--bigNotch))
+    );
+}

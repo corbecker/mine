@@ -1,0 +1,33 @@
+
+.highlight__solid{
+  position: relative;
+  padding: calc(var(--space)/4);
+  display: inline-block;
+  line-height: 1;
+}
+
+.highlight__solid__inner{
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.highlight__solid::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--yellow);
+  border-right: 2px solid var(--aqua);
+  clip-path: polygon(
+      0 0,
+      0 0,
+      100% 0, 
+      100% 0,
+      100% 100%,
+      100% 100%,
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}

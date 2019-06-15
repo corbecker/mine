@@ -1,0 +1,13 @@
+.l-work{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(198px, auto));
+  grid-gap: var(--space);
+  padding: 0;
+}
+
+.l-work li:first-child{
+  grid-column: 1;
+  grid-row: 1/span 2;
+}

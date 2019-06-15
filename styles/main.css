@@ -2,6 +2,7 @@
   --space: 1.8rem;
   --spaceXL: calc(var(--space)*2);
   --notchSize: 15px;
+  --bigNotch: 50px;
 
   /* colors */
   --dark-blue: #071e26;
@@ -33,6 +34,8 @@ h3{
   font-weight: 400;
   font-size: 1.3rem;
   color: var(--aqua);
+  margin: 0;
+
 }
 
 img{
@@ -71,11 +74,45 @@ img{
   margin-right: var(--space);
 }
 
+.l-section{
+  margin-top: var(--spaceXL);
+}
+
+ul{
+  margin-bottom: 0;
+}
+
+
+.list{
+  list-style: none;
+}
+
+.list__item{
+  margin-top: 5px;
+}
+
+.list__item:before{
+    content: '~';
+    margin-left: -20px;
+    margin-right: 10px;
+    color: var(--aqua);
+}
+
+.l-skills h3{
+
+  margin-top: var(--space);
+  
+}
+
 /* portrait phone */
 @media only screen and (max-width: 480px) {
 
   .l-container {
     padding: var(--space);
+  }
+
+  .section{
+    margin-top: var(--space);
   }
 
 }
@@ -87,11 +124,18 @@ img{
     padding: var(--space);
   }
 
+  .section{
+    margin-top: var(--space);
+  }
+
 }
 
 /* tablet portrait */
 @media only screen and (min-width: 621px) and (max-width: 768px) {
 
+  .section{
+    margin-top: var(--space);
+  }
   
 }
 
