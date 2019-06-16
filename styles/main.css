@@ -1,4 +1,5 @@
 :root {
+  --spaceXS: 1.2rem;
   --space: 1.8rem;
   --spaceXL: calc(var(--space)*2);
   --notchSize: 15px;
@@ -113,11 +114,8 @@ ul{
 /* portrait phone */
 @media only screen and (max-width: 480px) {
 
-  .l-container {
-    padding: var(--space);
-  }
-
-  .section{
+  .l-section {
+    padding: 0 var(--spaceXS);
     margin-top: var(--space);
   }
 
@@ -126,11 +124,8 @@ ul{
 /* phone landscape */
 @media only screen and (min-width: 481px) and (max-width: 620px){
 
-  .l-container {
-    padding: var(--space);
-  }
-
-  .section{
+  .l-section {
+    padding: 0 var(--spaceXS);
     margin-top: var(--space);
   }
 
