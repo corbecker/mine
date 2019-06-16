@@ -1,0 +1,24 @@
+.c-work{
+  margin-top: var(--space);
+  justify-content: space-around;
+}
+
+.c-work__item{
+  position: relative;
+  width: 400px;
+  padding: var(--space);
+}
+
+.c-work__title{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--dark-blue);
+  padding: var(--space);
+  border: 1px solid var(--aqua-light);
+}
+
+.c-work__image{
+  height: 200px;
+}
