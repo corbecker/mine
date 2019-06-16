@@ -10,7 +10,7 @@
   --aqua: #00f0ff;
   --yellow: #fcee0a;
   --aqua-light: rgba(0,240,255, 0.3);
-  --dark-blue-trans: rgba(7,30,38, 0.6);
+  --dark-blue-trans: rgba(7,30,38, 0.9);
 }
 
 * , *:before, *:after{ 
