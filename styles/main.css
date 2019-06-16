@@ -9,6 +9,7 @@
   --aqua: #00f0ff;
   --yellow: #fcee0a;
   --aqua-light: rgba(0,240,255, 0.3);
+  --dark-blue-trans: rgba(7,30,38, 0.6);
 }
 
 * , *:before, *:after{ 
@@ -40,6 +41,7 @@ h3{
 
 img{
   max-width: 100%;
+  height: auto;
 }
 
 .l-container {
@@ -75,6 +77,10 @@ img{
 }
 
 .l-section{
+  /* position: relative; */
+  max-width: 1300px;
+  padding: 0 var(--space);
+  margin: 0 auto;
   margin-top: var(--spaceXL);
 }
 

@@ -1,3 +1,7 @@
+.l-section--header{
+  margin-top: var(--spaceXL);
+}
+
 .c-header{
   margin-top: var(--spaceXL);
 }
