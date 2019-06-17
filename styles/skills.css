@@ -1,0 +1,26 @@
+.l-skills{
+  /* margin-top: -1.8rem; */
+  justify-content: space-around;;
+}
+
+.c-skill{
+  position: relative;
+  border: 1px solid var(--aqua-light);
+  padding: var(--spaceXS);
+  padding-top: 0;
+  max-width: 220px;
+  min-width: 220px;
+  font-size: 1rem;
+  margin-top: var(--space);
+}
+
+.c-skill__corner{
+  bottom: -10px;
+  right: -10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg);
+  background-color: var(--dark-blue);
+  border-bottom: 1px solid var(--aqua-light);
+}
