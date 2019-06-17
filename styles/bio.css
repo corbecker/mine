@@ -1,11 +1,14 @@
 .c-bio{
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 150px;
+  max-width: 250px;
   text-transform: uppercase;
   color: rgba(0,240,255, 0.4);
   text-shadow: 0px 0px 2px var(--aqua);
-  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--aqua-light);
+  /* flex: 0.8 0.8 150px; */
 }
 
 .c-bio__text{
@@ -17,14 +20,35 @@
   margin-bottom: 10px;
 }
 
+.c-bio__corner{
+  bottom: -10px;
+  right: -10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg);
+  background-color: var(--dark-blue);
+  border-bottom: 1px solid var(--aqua-light);
+}
+
 /* portrait phone */
 @media only screen and (max-width: 480px) {
+  /* .c-bio{
 
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  } */
 }
 
 /* phone landscape */
 @media only screen and (min-width: 481px) and (max-width: 620px){
+  .c-bio{
 
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
 }
 
 /* tablet portrait */

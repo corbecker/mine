@@ -69,7 +69,7 @@ img{
   max-width: 1300px;
   padding: 0 var(--space);
   margin: 0 auto;
-  margin-top: var(--spaceXL);
+  margin-top: var(--space);
 }
 
 ul{
