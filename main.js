@@ -6,10 +6,10 @@ function loadHUD() {
 
 function getFormattedDate() {
   const date = new Date();
-  const day = date.getDay();
-  const month = date.getDate();
+  const day = date.getDate();
+  const month = date.getMonth();
   const year = date.getFullYear();
-  return `${day}-${month}-${year}`;
+  return `${day}-${month + 1}-${year}`;
 }
 
 loadHUD();
