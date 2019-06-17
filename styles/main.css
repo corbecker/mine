@@ -62,23 +62,10 @@ img{
   justify-content: space-between;
 }
 .l-grid__grid-item {
-  flex: 1fr 1fr 160px;
-}
-
-.mt{
-  margin-top: var(--space);
-}
-
-.ml{
-  margin-left: var(--space);
-}
-
-.mr{
-  margin-right: var(--space);
+  flex: 1 1 160px;
 }
 
 .l-section{
-  /* position: relative; */
   max-width: 1300px;
   padding: 0 var(--space);
   margin: 0 auto;
@@ -125,7 +112,7 @@ ul{
 @media only screen and (min-width: 481px) and (max-width: 620px){
 
   .l-section {
-    padding: 0 var(--spaceXS);
+    padding: 0 var(--space);
     margin-top: var(--space);
   }
 
@@ -134,15 +121,16 @@ ul{
 /* tablet portrait */
 @media only screen and (min-width: 621px) and (max-width: 768px) {
 
-  .section{
-    margin-top: var(--space);
+  .l-section{
+    padding: 0 var(--spaceXL);
   }
-  
 }
 
 /* tablet landscape */
 
 @media only screen and (min-width: 769px) and (max-width: 1100px) {
 
-
+  .l-section{
+    padding: 0 var(--spaceXL);
+  }
 }

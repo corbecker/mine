@@ -5,6 +5,7 @@
   text-transform: uppercase;
   color: rgba(0,240,255, 0.4);
   text-shadow: 0px 0px 2px var(--aqua);
+  margin: 20px;
 }
 
 .c-bio__text{

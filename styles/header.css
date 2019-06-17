@@ -25,7 +25,8 @@
 
 .l-header__profile{
   display: flex;
-  margin-top: var(--space)
+  margin-top: var(--space);
+  margin-left: var(--space)
 }
 
 /* portrait phone */
@@ -45,6 +46,7 @@
 
   .l-header__profile{
     flex-direction: column;
+    margin-left: 0;
   }
 }
 
@@ -63,6 +65,10 @@
     font-size: 1rem;
   }
 
+  .l-header__profile{
+    margin-left: 0;
+  }
+
 }
 
 /* tablet portrait */
@@ -79,6 +85,10 @@
   .l-header__blurb {
     font-size: 1rem;
   }
+
+  .l-header__profile{
+    margin-left: 0;
+  }
   
 }
 
@@ -88,6 +98,21 @@
 
   .l-header{
     margin-top: var(--space);
+  }
+
+  .l-header__heading{
+    font-family: 'Cousine', monospace;
+    font-size: 2rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .l-header__blurb {
+    font-size: 1rem;
+  }
+
+  .l-header__profile{
+    margin-left: 0;
   }
 
 }

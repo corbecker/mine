@@ -5,17 +5,22 @@
 
 .c-work__item{
   position: relative;
-  width: 410px;
-  padding: var(--space);
+  max-width: 350px;
+  margin: var(--spaceXS);
+  flex: 1 0 270px;
+}
+
+.l-work__wrapper{
+  position: relative;
 }
 
 .c-work__title{
   display: inline-block;
   position: absolute;
   right: -10px;
-  top: 200px;
+  bottom: -5px;
   background-color: var(--dark-blue-trans);
-  padding: var(--space);
+  padding: var(--spaceXS);
   border: 1px solid var(--aqua-light);
   color: var(--aqua);
 }
@@ -45,7 +50,7 @@
 @media only screen and (max-width: 480px) {
 
   .c-work__item{
-    padding: var(--spaceXS);
+    /* padding: var(--spaceXS); */
   }
 
   .c-work__image{
@@ -55,8 +60,7 @@
   .c-work__title{
 
     padding: var(--spaceXS);
-    right: 0px;
-    top: 140px;
+
   }
 
 }
