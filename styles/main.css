@@ -101,36 +101,26 @@ ul{
 /* portrait phone */
 @media only screen and (max-width: 480px) {
 
-  .l-section {
-    padding: 0 var(--space);
-    margin-top: var(--space);
-  }
+
 
 }
 
 /* phone landscape */
 @media only screen and (min-width: 481px) and (max-width: 620px){
 
-  .l-section {
-    padding: 0 var(--space);
-    margin-top: var(--space);
-  }
+
 
 }
 
 /* tablet portrait */
 @media only screen and (min-width: 621px) and (max-width: 768px) {
 
-  .l-section{
-    padding: 0 var(--space);
-  }
+
 }
 
 /* tablet landscape */
 
 @media only screen and (min-width: 769px) and (max-width: 1100px) {
 
-  .l-section{
-    padding: 0 var(--spaceXL);
-  }
+
 }
