@@ -102,7 +102,7 @@ ul{
 @media only screen and (max-width: 480px) {
 
   .l-section {
-    padding: 0 var(--spaceXS);
+    padding: 0 var(--space);
     margin-top: var(--space);
   }
 
@@ -122,7 +122,7 @@ ul{
 @media only screen and (min-width: 621px) and (max-width: 768px) {
 
   .l-section{
-    padding: 0 var(--spaceXL);
+    padding: 0 var(--space);
   }
 }
 

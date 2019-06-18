@@ -61,11 +61,15 @@
 
 /* tablet portrait */
 @media only screen and (min-width: 621px) and (max-width: 768px) {
-
+  .hud {
+    margin: 10px;
+  }
 }
 
 /* tablet landscape */
 
 @media only screen and (min-width: 769px) and (max-width: 1100px) {
-
+  .hud {
+    margin: 10px;
+  }
 }
