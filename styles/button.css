@@ -1,0 +1,8 @@
+.c-button{
+  border: 1px solid var(--yellow);
+  padding: var(--spaceXS);
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

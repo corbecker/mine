@@ -1,7 +1,26 @@
 .l-footer{
   width: 80%;
   border-top: 1px solid var(--aqua-light);
-  padding: var(--spaceXL) 0;
+  padding: var(--spaceXS) 0;
   display: flex;
   justify-content: center;
+  background-color: var(--yellow);
+  border-right: 5px solid var(--aqua);
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+  position: relative;
+}
+.l-footer a{
+  color: rgba(0,0,0,1);
+}
+
+.l-footer__corner{
+  top: -20px;
+  left: -20px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: rotate(135deg);
+  background-color: var(--dark-blue);
+  border-top: 2px solid var(--aqua);
 }

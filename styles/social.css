@@ -1,0 +1,29 @@
+.l-social{
+  list-style: none;
+  display: flex;
+}
+
+.l-social__item{
+  display: flex;
+}
+
+.l-social__item a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.l-social__item .icon{
+  display: inline-block;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 25px;
+  height: 25px;
+  margin-left: var(--spaceXS);
+}
+
+
+.l-social__item .icon-linkedin {
+  background-image: url(../images/icons/linkedin.svg);
+}
