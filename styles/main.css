@@ -98,6 +98,10 @@ ul{
   
 }
 
+a {
+  color: var(--aqua);
+}
+
 /* portrait phone */
 @media only screen and (max-width: 480px) {
 
