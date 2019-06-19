@@ -24,3 +24,28 @@
   background-color: var(--dark-blue);
   border-top: 2px solid var(--aqua);
 }
+
+.l-footer__item{
+  max-width: 90%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* portrait phone */
+@media only screen and (max-width: 480px) {
+
+  .l-footer{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+
+
+
+}
