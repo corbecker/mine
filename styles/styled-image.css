@@ -10,7 +10,7 @@
   top: -4px;
   z-index: 1;
   color: var(--aqua-light);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .c-styled-image:after {

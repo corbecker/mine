@@ -8,6 +8,7 @@
   text-shadow: 0px 0px 2px var(--aqua);
   padding: 20px;
   border: 1px solid var(--aqua-light);
+  transform: perspective(400px) rotateY(-5deg);
 }
 
 .c-bio__text{
@@ -32,12 +33,10 @@
 
 /* portrait phone */
 @media only screen and (max-width: 480px) {
-  /* .c-bio{
+  .c-bio{
 
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  } */
+    transform: perspective(0px) rotateY(0deg);
+  }
 }
 
 /* phone landscape */
