@@ -1,6 +1,6 @@
 .c-logo{
   font-size: 1.4rem;
-  color: var(--aqua);
+  position: relative;
   display: inline-block;
   margin-top: var(--spaceXL);
 }

@@ -1,0 +1,52 @@
+.yellow-bg{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 490px;
+  background-color: var(--yellow);
+  background-image: url(/images/bg_1.png);
+}
+
+.yellow-bg__home{
+  position: absolute;
+  content: '';
+  top: -60px;
+  right: 0;
+  left: 0;
+  height: 200px;
+  background-color: var(--yellow);
+  background-image: url(/images/bg_1.png);
+}
+
+/* portrait phone */
+@media only screen and (max-width: 480px) {
+  .yellow-bg__home{
+    top: -130px;
+  }
+}
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+  .yellow-bg__home{
+    top: -130px;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+
+  .yellow-bg__home{
+    top: -100px;
+  }
+  
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  .yellow-bg__home{
+    top: -100px;
+  }
+}
