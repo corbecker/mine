@@ -5,7 +5,8 @@
     "firstname firstname lastname lastname"
     "address address phone email"
     "experience1 experience1 experience1 experience1"
-    "experience2 experience2 experience2 experience2";
+    "experience2 experience2 experience2 experience2"
+    "education education education education";
   font-size: 1rem;
 }
 
@@ -112,6 +113,21 @@
 
 .c-cv-experience::before{
   content: 'experience';
+  top: 3px;
+  left: 3px;
+  position: absolute;;
+  font-size: 11px;
+  width: 200px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+}
+
+.c-cv-education{
+  grid-area: education;
+}
+
+.c-cv-education::before{
+  content: 'education';
   top: 3px;
   left: 3px;
   position: absolute;;
