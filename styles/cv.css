@@ -89,4 +89,57 @@
   color: rgba(255,255,255,0.8);
 }
 
+/* portrait phone */
+@media only screen and (max-width: 480px) {
+  .c-cv-grid{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "firstname"
+      "lastname"
+      "address"
+      "phone"
+      "email"
+      "work";
+  }
 
+}
+
+/* phone landscape */
+@media only screen and (min-width: 481px) and (max-width: 620px){
+  .c-cv-grid{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "firstname"
+      "lastname"
+      "address"
+      "phone"
+      "email"
+      "work";
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+  .c-cv-grid{
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: 
+      "firstname lastname"
+      "address phone"
+      "address email"
+      "work work";
+  }
+  
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  .c-cv-grid{
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: 
+      "firstname lastname"
+      "address phone"
+      "address email"
+      "work work";
+  }
+}
