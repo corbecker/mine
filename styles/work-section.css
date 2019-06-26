@@ -8,6 +8,8 @@
   max-width: 350px;
   margin: var(--spaceXS);
   flex: 1 0 270px;
+  display: block;
+  text-decoration: none;
 }
 
 .l-work__wrapper{

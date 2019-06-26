@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/corbecker/mine/issues"
   },
-  "homepage": "https://github.com/corbecker/mine#readme"
+  "homepage": "https://github.com/corbecker/mine#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
 }

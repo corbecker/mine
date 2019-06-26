@@ -9,6 +9,7 @@
     "education education education education"
     "skills skills skills skills";
   font-size: 1rem;
+  margin-bottom: var(--spaceXL);
 }
 
 .c-cv-griditem{
