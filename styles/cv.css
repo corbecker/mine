@@ -6,7 +6,8 @@
     "address address phone email"
     "experience1 experience1 experience1 experience1"
     "experience2 experience2 experience2 experience2"
-    "education education education education";
+    "education education education education"
+    "skills skills skills skills";
   font-size: 1rem;
 }
 
@@ -16,6 +17,10 @@
   position: relative;
   color: var(--aqua);
   line-height: 1.5;
+}
+
+.c-cv-griditem ul{
+  padding-left: 20px;
 }
 
 .c-cv-grid__firstname{
@@ -137,6 +142,27 @@
   color: rgba(255,255,255,0.8);
 }
 
+.c-cv-skills{
+  grid-area: skills;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-cv-skills ul{
+  flex: 1;
+}
+
+.c-cv-skills::before{
+  content: 'skills';
+  top: 3px;
+  left: 3px;
+  position: absolute;;
+  font-size: 11px;
+  width: 200px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+}
+
 /* portrait phone */
 @media only screen and (max-width: 480px) {
   .c-cv-grid{
@@ -147,7 +173,11 @@
       "address"
       "phone"
       "email"
-      "work";
+      "work"
+      "experience1"
+      "experience2"
+      "education"
+      "skills";
   }
 
 }
@@ -162,7 +192,11 @@
       "address"
       "phone"
       "email"
-      "work";
+      "work"
+      "experience1"
+      "experience2"
+      "education"
+      "skills";
   }
 }
 
@@ -174,7 +208,11 @@
       "firstname lastname"
       "address phone"
       "address email"
-      "work work";
+      "work work"
+      "experience1 experience1"
+      "experience2 experience2"
+      "education education"
+      "skills skills";
   }
   
 }
@@ -188,6 +226,10 @@
       "firstname lastname"
       "address phone"
       "address email"
-      "work work";
+      "work work"
+      "experience1 experience1"
+      "experience2 experience2"
+      "education education"
+      "skills skills";
   }
 }
