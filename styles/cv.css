@@ -4,7 +4,8 @@
   grid-template-areas: 
     "firstname firstname lastname lastname"
     "address address phone email"
-    "experience1 experience1 experience1 experience1";
+    "experience1 experience1 experience1 experience1"
+    "experience2 experience2 experience2 experience2";
   font-size: 1rem;
 }
 
@@ -93,6 +94,10 @@
 
 .c-cv-experience__1{
   grid-area: experience1;
+}
+
+.c-cv-experience__2{
+  grid-area: experience2;
 }
 
 .c-cv-experience__date{
