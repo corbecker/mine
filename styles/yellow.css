@@ -1,12 +1,13 @@
 .yellow-bg{
   position: absolute;
   content: '';
-  top: 0;
+  top: -40px;
   right: 0;
   left: 0;
-  height: 490px;
+  height: 200px;
   background-color: var(--yellow);
   background-image: url(/images/bg_1.png);
+  background-repeat: no-repeat;
 }
 
 .yellow-bg__home{
