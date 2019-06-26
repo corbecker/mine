@@ -73,6 +73,10 @@ img{
   position: relative;
 }
 
+button{
+  background: none;
+}
+
 ul{
   margin-bottom: 0;
 }

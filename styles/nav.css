@@ -13,6 +13,13 @@
   border-top: 2px solid rgba(255,255,255,0.5);
   padding-top: 5px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c-navbar__item a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .c-navbar__item--active{
