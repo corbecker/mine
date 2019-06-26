@@ -1,0 +1,34 @@
+.c-cv-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "firstname firstname lastname lastname"
+    "address address phone email"
+    "work work work work";
+}
+
+.c-cv-griditem{
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 20px;
+}
+
+.c-cv-grid__firstname{
+  grid-area: firstname;
+}
+
+.c-cv-grid__lastname{
+  grid-area: lastname;
+}
+
+.c-cv-grid__address{
+  grid-area: address;
+}
+
+.c-cv-grid__phone{
+  grid-area: phone;
+}
+
+.c-cv-grid__email{
+  grid-area: email;
+}
