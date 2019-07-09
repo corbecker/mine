@@ -1,4 +1,4 @@
-.l-footer{
+.l-footer {
   width: 80%;
   border-top: 1px solid var(--aqua-light);
   padding: var(--spaceXS) 0;
@@ -6,15 +6,15 @@
   justify-content: center;
   background-color: var(--yellow);
   border-right: 5px solid var(--aqua);
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
   position: relative;
 }
-.l-footer a{
-  color: rgba(0,0,0,1);
+.l-footer a {
+  color: rgba(0, 0, 0, 1);
 }
 
-.l-footer__corner{
+.l-footer__corner {
   top: -20px;
   left: -20px;
   position: absolute;
@@ -25,27 +25,25 @@
   border-top: 2px solid var(--aqua);
 }
 
-.l-footer__item{
+.l-footer__item {
   max-width: 90%;
   text-align: center;
   margin-top: 10px;
+  margin-left: var(--space);
 }
-
 
 /* portrait phone */
 @media only screen and (max-width: 480px) {
-
-  .l-footer{
+  .l-footer {
     width: 100%;
     flex-wrap: wrap;
   }
-
-
 }
 
 /* phone landscape */
-@media only screen and (min-width: 481px) and (max-width: 620px){
-
-
-
+@media only screen and (min-width: 481px) and (max-width: 620px) {
+  .l-footer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
