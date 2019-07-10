@@ -6,6 +6,8 @@
     "address address phone email"
     "experience1 experience1 experience1 experience1"
     "experience2 experience2 experience2 experience2"
+    "experience3 experience3 experience3 experience3"
+    "experience4 experience4 experience4 experience4"
     "education education education education"
     "skills skills skills skills";
   font-size: 1rem;
@@ -107,6 +109,14 @@
   grid-area: experience2;
 }
 
+.c-cv-experience__3{
+  grid-area: experience3;
+}
+
+.c-cv-experience__4{
+  grid-area: experience4;
+}
+
 .c-cv-experience__date{
   position: absolute;
   font-size: 11px;
@@ -177,6 +187,8 @@
       "work"
       "experience1"
       "experience2"
+      "experience3"
+      "experience4"
       "education"
       "skills";
   }
@@ -196,6 +208,8 @@
       "work"
       "experience1"
       "experience2"
+      "experience3"
+      "experience4"
       "education"
       "skills";
   }
@@ -212,6 +226,8 @@
       "work work"
       "experience1 experience1"
       "experience2 experience2"
+      "experience3 experience3"
+      "experience4 experience4"
       "education education"
       "skills skills";
   }
@@ -230,6 +246,8 @@
       "work work"
       "experience1 experience1"
       "experience2 experience2"
+      "experience3 experience3"
+      "experience4 experience4"
       "education education"
       "skills skills";
   }
