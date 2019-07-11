@@ -12,6 +12,7 @@
     "skills skills skills skills";
   font-size: 1rem;
   margin-bottom: var(--spaceXL);
+  margin-top: var(--space);
 }
 
 .c-cv-griditem{
