@@ -47,6 +47,10 @@
     margin-left: 0;
     flex-wrap: wrap;
   }
+
+  .l-header__grid-item{
+    margin-top: var(--space);
+  }
 }
 
 /* phone landscape */
@@ -65,6 +69,10 @@
     margin-left: 0;
     flex-wrap: wrap;
 
+  }
+
+  .l-header__grid-item{
+    margin-top: var(--space);
   }
 
 }
